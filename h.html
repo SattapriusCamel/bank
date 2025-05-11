@@ -21,12 +21,6 @@
                 background-color: salmon;
             }
         </style>
-        <script>
-            function debit() {
-                var x = 
-                document.getElementById("meow").innerHTML = "Your Balance = " + m + " €";
-                }
-        </script>
     </head>
     <body>
 <center>
@@ -34,14 +28,20 @@
 
 
 
-<form name="buttons-money">
+
         Enter amount of money
-        <input type="number" name="amount" value="molah">
+        <input type="number" name="amount" value="molah" id="amount">
         <br><br>
-    <input type="submit" value="Debit" id="b1" name="debit" onclick="debit()"> <input type="submit" value="Credit" id="b2" name="etti">
-    <p id="meow">Your Balance = 0 €</p>
-</form>
+    <button id="b1" onclick="crebit()">Credit</button>
+    <button id="b2" onclick="debit()">Debit</button>
 </center>
 </body>
+<script>
+var a = document.getElementById("amount2").innerHTML;
+var amount = document.getElementById("amount").innerHTML;
+function debit() {
+document.getElementById("amount").innerHTML
+}
 
+</script>
 </html>
